@@ -28,7 +28,7 @@ export default function Tabs() {
         <div className='w-full grow relative'>
             <CodeTab
             id={tabIndex}
-            code={tabs.find(obj => obj.id === tabIndex).code}/>
+            code={tabs.find(obj => obj.id === tabIndex).code[0]}/>
             {previewData.preview && <Preview/>}
         </div>
       
